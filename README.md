@@ -6,6 +6,8 @@ Use:
         1.1 yarn add less-tool
         1.2 npm i style-resources-loader -D
             1.2.1 npm i vue-cli-plugin-style-resources-loader -D
+            1.2.2 npm i less-loader -D
+            1.2.3 npm i less -D
         1.3 in you vue.config.js ,add the following code:
             pluginOptions: {
             'style-resources-loader': {
@@ -13,7 +15,9 @@ Use:
               patterns: [ './node_modules/less-tool/*.less' ]
             }
             },  
-        1.4 in your vite project, add the following code in vite.config.js
+        1.4 del sass-loader and node-sass in your packages.json
+
+    2 in your vite project, add the following code in vite.config.js
               css: {
                 modules: {
                   localsConvention: 'dashesOnly'
