@@ -5,6 +5,7 @@ Use:
     1 in your vue project
         1.1 yarn add less-tool
         1.2 npm i style-resources-loader -D
+            1.2.1 npm i vue-cli-plugin-style-resources-loader -D
         1.3 in you vue.config.js ,add the following code:
             pluginOptions: {
             'style-resources-loader': {
