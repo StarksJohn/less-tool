@@ -13,7 +13,7 @@
 @paddingLeft: 16px;
 @simple-header-height: 40px;
 @grayText: #ccc;
-@pageCellW:343px;
+@pageCellW: 343px;
 
 .page {
   -webkit-box-sizing: border-box;
@@ -57,7 +57,8 @@
     content: '';
   }
 }
-.border-1px(@color:#dcdcdc,@h:1px){
+
+.border-1px(@color:#dcdcdc,@h:1px) {
   border: @h solid @color;
 }
 
@@ -92,14 +93,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 //绝对位置铺满父节点
 .absoluteFull {
   position: absolute;
-  top:0;
-  bottom:0;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
   z-index: 0;
 }
@@ -146,11 +148,12 @@
   flex-direction: column;
   align-items: @ai;
 }
+
 .flex-row(@ai:center,@jc:space-between) {
   display: flex;
   flex-direction: row;
   align-items: @ai;
-  justify-content:@jc;
+  justify-content: @jc;
 }
 
 .header-box {
@@ -184,7 +187,7 @@ https://juejin.cn/book/6844733826191589390/section/6844733826283864072
   .boxSizing();
   color: #353535;
   font-size: 16px;
-  line-height:22px;
+  line-height: 22px;
   font-family: PingFangSC-Medium, PingFang SC, serif;
   font-weight: 500;
   background: #F5F5F5;
@@ -230,13 +233,13 @@ https://juejin.cn/book/6844733826191589390/section/6844733826283864072
 /**
 固定在页面底部的按钮的容器
  */
-.fixedBottomBtBox{
+.fixedBottomBtBox {
   position: fixed;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   padding-bottom: 34px;
   .flex-column();
-  background-color:@page-bg;
+  background-color: @page-bg;
 }
 
 /**
@@ -244,8 +247,17 @@ https://juejin.cn/book/6844733826191589390/section/6844733826283864072
  前提是文本里加 \n
  如果不生效,直接给div里要换行的文字外围加 <p> </p>
  */
-.preLine{
+.preLine {
   white-space: pre-line;
+}
+
+/**
+https://blog.csdn.net/qq_41656943/article/details/87429318
+div鼠标悬停变手型
+使用时直接 .handsCursor;
+ */
+.handsCursor {
+  cursor: pointer;
 }
 
 
