@@ -39,7 +39,7 @@ Use:
 Push:
         
         update the version in  package.json
-        git commit -a -s -m ''
+        git commit -a -s -m 'add'
         git push origin main
         npm publish
         Finally, in your main project, yarn add less-tool or npm i less-tool
