@@ -3,7 +3,7 @@
 Use: 
         
     1 in your vue project
-        1.1 yarn add less-tool
+        1.1 yarn add less-tool or npm i less-tool
         1.2 npm i style-resources-loader -D
             1.2.1 npm i vue-cli-plugin-style-resources-loader -D
             1.2.2 npm i less-loader -D
@@ -37,7 +37,9 @@ Use:
 
 
 Push:
+        
         update the version in  package.json
-        git commit -a -s -m ' '
+        git commit -a -s -m ''
         git push origin main
         npm publish
+        Finally, in your main project, yarn add less-tool or npm i less-tool
