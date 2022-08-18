@@ -31,7 +31,7 @@ Use:
                     }
                   }
                 }
-    2 then you can use the variables or mixin methods defined in the .less file globally
+    3 then you can use the variables or mixin methods defined in the .less file globally
 
 
 Push:
