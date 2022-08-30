@@ -39,5 +39,5 @@ Use:
 Push:
         
         1 update the version in package.json
-        2 git commit -a -s -m 'add' && git push origin main && npm publish
+        2 nvm use 14 && git commit -a -s -m 'add' && git push origin main && npm publish
         3 Finally, in your main project, yarn add less-tool or npm i less-tool
