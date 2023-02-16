@@ -41,7 +41,15 @@
   background-color: @page-bg;
 }
 
-//背景图片地址和大小
+/**
+div 设置 背景图 地址和大小
+eg:  <div class="DrainagePage0"></div>
+     .DrainagePage0 {
+        .bis('../../assets/DrainagePage0.png');
+        width: 100%;
+        height: 453px;
+     }
+ */
 .bis(@url) {
   background-image: url(@url);
   background-repeat: no-repeat;
