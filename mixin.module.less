@@ -84,47 +84,47 @@ eg:  <div class="DrainagePage0"></div>
 }
 
 /*单条border样式 https://github.com/weizhanzhan/vue3-ts-template-h5#readme 有些手机的屏幕分辨率较高，是2-3倍屏幕。css样式中border:1px solid red;在2倍屏下，显示的并不是1个物理像素，而是2个物理像素。解决方案如下*/
-.border-1px-new (@color:red, @direction:bottom) {
-  position: relative;
-  border: none;
-  &::after{
-    content: '';
-    position: absolute;
-    background: @color;
-  @if @direction == left {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    transform: scaleX(0.5);
-    transform-origin: left 0;
-  }
-  @if @direction == right {
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    transform: scaleX(0.5);
-    transform-origin: right 0;
-  }
-  @if @direction == bottom {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    transform: scaleY(0.5);
-    transform-origin: 0 bottom;
-  }
-  @if @direction == top {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    transform: scaleY(0.5);
-    transform-origin: 0 top;
-  }
-  }
-}
+//.border-1px-new (@color:red, @direction:bottom) {
+//  position: relative;
+//  border: none;
+//  &::after{
+//    content: '';
+//    position: absolute;
+//    background: @color;
+//  @if @direction == left {
+//    left: 0;
+//    top: 0;
+//    height: 100%;
+//    width: 2px;
+//    transform: scaleX(0.5);
+//    transform-origin: left 0;
+//  }
+//  @if @direction == right {
+//    right: 0;
+//    top: 0;
+//    height: 100%;
+//    width: 2px;
+//    transform: scaleX(0.5);
+//    transform-origin: right 0;
+//  }
+//  @if @direction == bottom {
+//    bottom: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 2px;
+//    transform: scaleY(0.5);
+//    transform-origin: 0 bottom;
+//  }
+//  @if @direction == top {
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 2px;
+//    transform: scaleY(0.5);
+//    transform-origin: 0 top;
+//  }
+//  }
+//}
 
 //定位全屏
 .allcover {
