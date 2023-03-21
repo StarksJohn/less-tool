@@ -42,5 +42,5 @@ Push:
             1.0.0 -> 1.0.1  npm version patch
             1.0.1 -> 1.1.0  npm version minor
             1.1.0 -> 2.0.0  npm version major
-        2 git commit -a -s -m 'add' && git push origin main && npm login && npm publish
+        2 git commit -a -s -m 'add' && npm version patch && git push origin main && npm login && npm publish
         3 Finally, in your main project, yarn add less-tool or npm i less-tool
