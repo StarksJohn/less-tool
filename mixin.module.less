@@ -83,7 +83,7 @@ eg:  <div class="DrainagePage0"></div>
   border: @h solid @color;
 }
 
-/*单条border样式 https://github.com/weizhanzhan/vue3-ts-template-h5#readme 有些手机的屏幕分辨率较高，是2-3倍屏幕。css样式中border:1px solid red;在2倍屏下，显示的并不是1个物理像素，而是2个物理像素。解决方案如下*/
+/*暂测无效: 单条border样式 https://github.com/weizhanzhan/vue3-ts-template-h5#readme 有些手机的屏幕分辨率较高，是2-3倍屏幕。css样式中border:1px solid red;在2倍屏下，显示的并不是1个物理像素，而是2个物理像素。解决方案如下*/
 .border-1px-new (@color:red, @direction:bottom) {
   position: relative;
   border: none;
@@ -124,6 +124,28 @@ eg:  <div class="DrainagePage0"></div>
     transform-origin: 0 top;
   }
   }
+}
+/*四条border样式 https://github.com/weizhanzhan/vue3-ts-template-h5 */
+.all-border-1px (@color, @radius) {
+  position: relative;
+  border: none;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid @color;
+    border-radius: @radius * 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+  }
+
 }
 
 //定位全屏

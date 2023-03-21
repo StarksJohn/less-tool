@@ -38,9 +38,9 @@ Use:
 
 Push:
         
-        1 update the version in package.json , eg : https://www.cnblogs.com/isYunjiang/p/16483363.html 
-            1.0.0 -> 1.0.1  npm version patch
-            1.0.1 -> 1.1.0  npm version minor
-            1.1.0 -> 2.0.0  npm version major
-        2 git commit -a -s -m 'add' && npm version patch && git push origin main && npm login && npm publish
-        3 Finally, in your main project, yarn add less-tool or npm i less-tool
+        1 git commit -a -s -m 'add' && npm version patch && git push origin main && npm login && npm publish
+            1.1 npm version patch is update the version in package.json , eg : https://www.cnblogs.com/isYunjiang/p/16483363.html 
+                1.0.0 -> 1.0.1  npm version patch
+                1.0.1 -> 1.1.0  npm version minor
+                1.1.0 -> 2.0.0  npm version major
+        2 Finally, in your main project, yarn add less-tool or npm i less-tool
